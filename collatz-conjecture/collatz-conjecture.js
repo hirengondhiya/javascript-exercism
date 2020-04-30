@@ -6,11 +6,7 @@
 function* collatzConjecture(n) {
   let newN = n;
   while(newN > 1) {
-    if(newN % 2 == 0) {
-      newN = newN / 2;
-    } else {
-      newN = 3 * newN + 1;
-    }
+    newN = newN % 2 == 0? newN / 2 : 3 * newN + 1;
     yield newN;
   }
 }
