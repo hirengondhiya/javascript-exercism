@@ -4,5 +4,8 @@
 //
 
 export const reverseString = (input) => {
-  return input.split('').map((c, i) => input[input.length-1-i]).join('');
+  return input
+          .split('')
+          .map((c, i) => input[input.length-1-i])
+          .join('');
 };
